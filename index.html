@@ -38,7 +38,23 @@
         
         <a href="https://twitter.com/OEI134mogu" class="link-card" target="_blank">X</a>    
         <a href="https://bsky.app/profile/mogumogu-mogu.bsky.social" class="link-card" target="_blank">Bluesky</a>  
-    
+
+        <p>Contact</p>
+        
+        <a href="javascript:void(0);" onclick="sendEmail();" class="link-card">
+            
+        </a>
+
+        <script>
+        function sendEmail() {
+            // アドレスを分割して定義（クローラーに読み取られにくくする）
+            var user = "mogu.music3";
+            var domain = "gmail.com";
+            
+            // クリックされた時に結合して実行
+            window.location.href = "mailto:" + user + "@" + domain;
+        }
+        </script>
     </div>
 
 </body>
